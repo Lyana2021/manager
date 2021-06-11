@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="938.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+       <FlowPane fx:id="createTable" prefHeight="529.0" prefWidth="938.0" BorderPane.alignment="CENTER">
+           <TableView fx:id="tableView" prefHeight="325.0" prefWidth="938.0">
+               <columns>
+
+                   <TableColumn fx:id="userTable" prefWidth="127.0" text="Имя пользователя" />
+                   <TableColumn fx:id="passwordColumn" minWidth="0.0" prefWidth="111.0" text="Пароль" />
+                   <TableColumn fx:id="siteNameColumn" minWidth="0.0" prefWidth="133.0" text="Название сайта" />
+                   <TableColumn fx:id="categoryColumn" minWidth="0.0" prefWidth="126.0" text="Категория" />
+                   <TableColumn fx:id="commentColumn" minWidth="0.0" prefWidth="158.0" text="Комментарии" />
+                   <TableColumn fx:id="dateColumn" minWidth="0.0" prefWidth="135.0" text="Дата" />
+                   <TableColumn fx:id="urlColumn" minWidth="0.0" prefWidth="147.0" text="Ссылка" />
+               </columns>
+           </TableView>
+       </FlowPane>
+   </center>
+   <top>
+       <FlowPane prefHeight="40.0" prefWidth="938.0" BorderPane.alignment="CENTER">
+           <Label text="Выберите категорию:">
+              <FlowPane.margin>
+                  <Insets left="10.0" />
+              </FlowPane.margin>
+           </Label>
+           <ChoiceBox fx:id="" prefWidth="150.0">
+              <FlowPane.margin>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+              </FlowPane.margin>
+           </ChoiceBox>
+       </FlowPane>
+   </top>
+   <bottom>
+       <FlowPane prefHeight="342.0" prefWidth="938.0" BorderPane.alignment="CENTER">
+         <Button mnemonicParsing="false" onAction="#addClicked" text="Добавить">
+            <FlowPane.margin>
+               <Insets left="10.0" />
+            </FlowPane.margin>
+         </Button>
+         <VBox prefHeight="295.0" prefWidth="250.0">
+            <children>
+               <Label text="Введите пароль" />
+                 <TextField fx:id="passwordInput" prefHeight="25.0" prefWidth="154.0" />
+               <Label text="Введите имя пользователя" />
+               <TextField  fx:id="usernameInput"/>
+               <Label text="Введите название сайта" />
+               <TextField fx:id="sitenameInpute" />
+               <Label text="Введите категорию" />
+               <TextField fx:id="categoryInput" />
+               <Label text="Введите комментарий" />
+               <TextField fx:id="coomentInput" />
+               <Label text="Введите дату" />
+               <TextField fx:id="dateInput" />
+               <Label text="Введите ссылку" />
+               <TextField fx:id="urlInput" prefHeight="5.0" prefWidth="250.0" />
+            </children></VBox>
+       </FlowPane>
+   </bottom>
+</BorderPane>

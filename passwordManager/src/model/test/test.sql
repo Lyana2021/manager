@@ -1,0 +1,1 @@
+CREATE TABLE `passwords` (`username` VARCHAR(45) NULL,`password` VARCHAR(45) NULL,`sitesName` VARCHAR(45) NULL,`category` VARCHAR(45) NULL,`comments` VARCHAR(45) NULL,`date` VARCHAR(45) NULL,`url` VARCHAR(45) NULL)";
